@@ -1,0 +1,144 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#back {
+  background-color: rgb(70, 70, 70);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+
+#roomCanvas {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  width: 100%;
+  height: 10vh;
+  border-radius: 20px;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  background-color: rgb(92, 1, 32);
+  overflow: hidden;
+}
+
+#salva {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#salva:hover{
+  background-color: rgb(92, 36, 55);
+}
+
+#livello {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: large;
+}
+
+#logo {
+  width: auto;
+  height: 10vh;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+#logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+#logo img:hover{
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.overlay {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  background-color: rgb(92, 36, 55);
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 1s ease-in-out, visibility 1s;
+  visibility: visible;
+}
+
+.overlay.hidden-fade {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.countdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  background-color: transparent;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: rgb(92, 36, 55);
+  width: 100vw;
+  height: 100vh;
+  font-size: 50px;
+  transition: opacity 1s ease-in-out, visibility 1s;
+  visibility: visible;
+}
+
+.countdown.hidden-fade {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#istruction-overlay{
+  text-align: center;
+}
+
+#inizia{
+  border: none;
+  border-radius: 3px;
+  width: 10%;
+  height: 5%;
+  font-weight: bold;
+  color: rgb(70, 70, 70);
+}
+

@@ -1,0 +1,16 @@
+body{
+    background-image: url(../images/windows11.png);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+img{
+    height: 10%;
+    width: 10%;
+    align-self: center;
+}
+img:hover{
+    cursor: pointer;
+}
